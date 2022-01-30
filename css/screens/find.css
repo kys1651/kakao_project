@@ -118,3 +118,9 @@
 .open-post__heart-count span{
     margin-left: 3px;
 }
+
+.twoprofile {
+    margin-top: 25px;
+    border-top: var(--main-border);
+    padding-top: 25px;
+}
