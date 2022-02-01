@@ -82,6 +82,14 @@
     height: 120px;
     border-radius: 10%;
 }
+@keyframes heartbounce {
+    from{
+        color: white;
+    }
+    to{
+        color: tomato;
+    }
+}
 
 .open-post__heart-count {
     background-color: rgba( 0, 0, 0, 0.5);
@@ -98,6 +106,25 @@
 
 .open-post__heart-count span{
     margin-left: 3px;
+}
+
+@keyframes heartBeat {
+    0%{
+        color:white;
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        transform: scale(1.5);
+    }
+    100%{
+        color:white;
+        transform: none;
+    }
+}
+
+.open-post__heart-count:hover i{
+    animation: heartBeat 2s linear infinite;
 }
 
 .twoprofile {
